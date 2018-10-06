@@ -7,9 +7,8 @@ public class MainClassTest extends MainClass
     public void testGetClassNumber()
     {
         int a = getClassNumber();
-        if (a > 45)
         {
-            Assert.fail("The number is more then 45");
+            Assert.assertTrue("The number is less than 45",a > 45);
         }
 
     }
